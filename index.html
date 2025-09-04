@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PedrosApps</title>
+  <title>PedrosApps - Mobile Apps</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -29,28 +29,29 @@
     h1, h2 {
       text-align: center;
     }
-    ul {
+    .apps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
       list-style: none;
       padding: 0;
     }
-    li {
-      margin: 1rem 0;
-      font-size: 1.1rem;
+    .app {
       display: flex;
+      flex-direction: column;
       align-items: center;
+      max-width: 150px;
     }
-    li img {
-      width: 48px;
-      height: 48px;
-      margin-right: 1rem;
-      border-radius: 10px;
+    .app img {
+      width: 100%;
+      max-width: 150px;
+      border-radius: 5px;
     }
-    a {
-      text-decoration: none;
-      color: #4CAF50;
-    }
-    a:hover {
-      text-decoration: underline;
+    .app-name {
+      margin-top: 0.5rem;
+      font-weight: bold;
+      text-align: center;
     }
     footer {
       text-align: center;
@@ -68,18 +69,24 @@
   </header>
   <main>
     <h2>My Mobile Apps</h2>
-    <ul>
-      <li>
-        
-        <a href="https://play.google.com/store/apps/details?id=com.coolki" target="_blank">Coolki</a>
+    <ul class="apps">
+      <li class="app">
+        <a href="https://play.google.com/store/apps/details?id=com.coolki" target="_blank">
+          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Cool Ki on Google Play">
+        </a>
+        <div class="app-name">Coolki</div>
       </li>
-      <li>
-       
-        <a href="https://play.google.com/store/apps/details?id=com.xylophonepl" target="_blank">Xylophone PL</a>
+      <li class="app">
+        <a href="https://play.google.com/store/apps/details?id=com.xylophonepl" target="_blank">
+          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Xylophone PL on Google Play">
+        </a>
+        <div class="app-name">Xylophone PL</div>
       </li>
-      <li>
-        
-        <a href="https://play.google.com/store/apps/details?id=com.sapertheminesweeper" target="_blank">Saper The Minesweeper</a>
+      <li class="app">
+        <a href="https://play.google.com/store/apps/details?id=com.sapertheminesweeper" target="_blank">
+          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Saper / Minesweeper on Google Play">
+        </a>
+        <div class="app-name">Saper The Minesweeper</div>
       </li>
     </ul>
   </main>
